@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* Color crema */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6f4e37; /* Café oscuro */
+    padding: 15px 20px;
+    color: #ffffff;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+#logout-button {
+    background-color: #d2691e; /* Café rojizo */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+#logout-button:hover {
+    background-color: #8b4513; /* Café más oscuro */
+}
+form {
+    padding: 20px;
+    background-color: #faf0e6; /* Color crema más claro */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6f4e37; /* Café oscuro */
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #a0522d; /* Café medio */
+    border-radius: 5px;
+    font-size: 1em;
+}
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #8b4513; /* Café oscuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+button[type="submit"]:hover {
+    background: #6f4e37; /* Café oscuro */
+}
+#recipe-list {
+    padding: 20px;
+}
+.recipe-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.recipe-item img {
+    max-width: 100px;
+    border-radius: 5px;
+}
+.recipe-item div {
+    flex: 1;
+    margin-left: 20px;
+}
+.recipe-item h3 {
+    margin: 0 0 10px;
+    color: #6f4e37; /* Café oscuro */
+}
+.recipe-item p {
+    margin: 5px 0;
+    color: #8b4513; /* Café oscuro */
+}
+.recipe-item button {
+    margin-left: 10px;
+    background: #a0522d; /* Café medio */
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.recipe-item button:hover {
+    background: #6f4e37; /* Café oscuro */
+}
+.recipe-item button.delete-button {
+    background: #d2691e; /* Café rojizo */
+}
+.recipe-item button.delete-button:hover {
+    background: #8b4513; /* Café oscuro */
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recetario</h1>
+            <button id="logout-button">Cerrar sesión</button>
+        </header>
+        <form id="recipe-form">
+            <input type="hidden" id="recipe-id">
+            <div class="form-group">
+                <label for="recipe-name">Nombre</label>
+                <input type="text" id="recipe-name" required>
+            </div>
+            <div class="form-group">
+                <label for="recipe-description">Descripción</label>
+                <textarea id="recipe-description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recipe-ingredients">Ingredientes</label>
+                <textarea id="recipe-ingredients" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recipe-procedure">Procedimiento</label>
+                <textarea id="recipe-procedure" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recipe-image">Imagen</label>
+                <input type="file" id="recipe-image" accept="image/*" required>
+            </div>
+            <button type="submit">Guardar Receta</button>
+        </form>
+        <div id="recipe-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
